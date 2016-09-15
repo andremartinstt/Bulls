@@ -1,0 +1,25 @@
+nav#menu{
+	display: block;
+}
+nav#menu ul{
+	list-style: none; /* Retira o ícone de lista (bolinha) */
+	text-transform: uppercase; /* Deixa a palavra em maiúsculo */
+	/*position: fixed;*/
+	position: absolute; /* Posicionamento absoluto de acordo com as coordenadas abaixo*/
+	top: -20px; /* Subindo o menu*/
+	left: 690px; /* espaçamento a esqueda do menu*/	
+}
+nav#menu li{
+	display: inline-block; /* Deixa os ítens na mesma linha */
+	background-color: #e6e600; /* Cor de fundo do item */
+	padding: 10px; /* Espaçamento de 10 px de cada backgroud dos itens */
+	margin: 2px; /* Espaçamento entre os intens */
+	transition: background-color 1s;
+}
+nav#menu li:hover{  /* Houver é o efeito quando se passa o mouse por cima */
+	background-color: #ffffff;
+}
+nav#menu a{
+	color: #00004d;
+	text-decoration: none; /* Retira o sublinhado */
+}

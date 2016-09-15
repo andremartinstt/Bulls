@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+body{
+	font-family: Arial, sans-serif;		
+}
+a{
+	color: #606060;
+	text-decoration: none;
+}
+img#logo{
+	padding-left: 50px;
+	padding-top: 15px;
+}
+header#cabecalho{
+	background-color: #000033;
+	padding-bottom: 7px;
+}
+header#cabecalho h1{
+	position: absolute;
+	left: 0px;
+	top: -30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 25pt;
+	padding: 0px;
+	color: #e6e600;
+}
+/*
+header#cabecalho h1{
+	position: absolute;
+	left: 10px;
+	top: -15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 30pt;
+	padding: 0px;
+	margin-bottom: 0px;
+	color: #ffff1a;
+}*/
+header#cabecalho h2{
+	position: absolute;
+	left: 200px;
+	top: -10px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #ffff80;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+nav#menu{
+	display: block;
+}
+nav#menu ul{
+	list-style: none; /* Retira o ícone de lista (bolinha) */
+	text-transform: uppercase; /* Deixa a palavra em maiúsculo */
+	/*position: fixed;*/
+	position: absolute; /* Posicionamento absoluto de acordo com as coordenadas abaixo*/
+	top: 5px; /* Subindo o menu*/
+	left: 690px; /* espaçamento a esqueda do menu*/	
+}
+nav#menu li{
+	display: inline-block; /* Deixa os ítens na mesma linha */
+	padding: 10px; /* Espaçamento de 10 px de cada backgroud dos itens */
+	margin: 2px; /* Espaçamento entre os intens */
+	transition: background-color 1s;
+}
+nav#menu a:hover{  /* Houver é o efeito quando se passa o mouse por cima */
+	color: #fff;
+}
+nav#menu a{
+	color: #e6e600;
+	text-decoration: none; /* Retira o sublinhado */
+	font-size: 18px;
+}
+div#inicio{
+	position: absolute; /* Posicionamento absoluto de acordo com as coordenadas abaixo*/
+	top: 25px; /* Subindo o menu*/
+	left: 150px; /* espaçamento a esqueda do menu*/
+}
+div#interface{
+	/* width: 1350px; */
+	background-color: #ffffff;
+	margin: -20px -18px 0px -20px; /* Margen (cima direita baixo esquerda) */
+	/* box-shadow: 0px 0px 10px rgba(255,255,0,1); Sombra lateral da página */
+	padding: 10px 10px 10px 10px; /* Espaçamento entre texto e margem */
+	color: #606060;
+}/*
+div#image-center{
+	background-image: url("../_images/image8.png");
+	background-repeat: no-repeat;
+	height: 500px;
+	background-size: 100% auto;
+}*/
+.cycle-slideshow img{
+	width: 100%;
+}
+article#content{
+	display: block; /* Colocar em bloco */
+	float: left;
+	width: 800px;
+
+}
+article#content h2{
+	background-color: #000033;
+	color: white;
+	margin-left: 40px;
+	margin-right: 400px;
+	padding: 3px 10px 3px 10px;
+
+}
+article#content p{
+	margin-left: 40px;
+}
+aside#sidebar{
+	display: block;
+	float: right;
+	width: 350px;
+	height: auto;
+	border-left: 1px solid #606060;
+	padding-left: 20px;
+	overflow: scroll;
+}
+aside#sidebar h2{
+	background-color: #000033;
+	color: white;
+	margin-right: 40px;
+	padding: 3px 10px 3px 10px;
+}
+aside#sidebar p{
+	border-bottom: 1px dotted #606060;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+/*
+div#image-center img{
+	width: 1350px;
+	margin-left: -250px;
+	padding: 0px;
+}
+*/
+table#tabledate{
+	border: 1px solid #000033;
+	margin-left: 45px;
+	border-spacing: 0px;
+	font-weight: bold;
+	color: #000033;
+}
+table#tabledate td{
+	border: 1px solid #000033;
+	padding: 5px;
+}
+.cleft{
+	background-color: #e6e600;
+	color: #000033;
+}
+.cmiddle{
+	background-color: #000033;
+	color: #ffffff;
+	text-align: right;
+}
+.cright{
+	background-color: #000033;
+	color: #ffffff;
+}
+.page-title{
+	font-family: 'Titillium Web', sans-serif;
+	color: #000033;
+	font-size: 30px;
+	margin-top: 70px;
+}
+section#other-content{
+	margin-left: 45px;
+	margin-right: 45px;
+}
+.form-contact{
+	margin-left: 45px;
+	font-size: 18px;
+}
+.form-group {
+	margin-bottom: 20px;
+}
+.form-group label {
+	margin-bottom: 5px;
+	font-size: 18px;
+	display: block;
+}
+.field {
+	display: block;
+	width: 50%;
+	padding: 8px 10px;
+	line-height: 20px;
+	border: 1px solid #ddd;
+	font-family: 'Arial', sans-serif;
+	background: #fff;
+	font-size: 16px;
+	/*outline: none;*/
+	outline-color: rgb(0, 0, 51, 0.5);
+}
+.button {
+	background: transparent;
+	border: 1px solid #000033;
+	color: #000033;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	cursor: pointer; /* Muda o estilo do cursor */
+}
+.button:hover {
+	text-decoration: underline;
+}
+ul.gallery{
+	width: 880px;
+	list-style: none;
+	display: flex;
+	margin: 80px 80px;
+}
+.min{
+	width: 200px;
+	padding: 10px;
+}
+.lbox{
+	visibility: hidden;
+	opacity: 0;
+}
+.lbox:target{
+	opacity: 1;
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+}
+.box_img{
+	width: 1000px;
+	margin: 150px auto;
+	text-align: center;
+	margin-top: 100px;
+}
+.btn{
+	color: #fff;
+	font-family: 'Arial';
+	text-decoration: none;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	text-align: center;
+}
+#prev{
+	left: 5%;
+	top: 45%;
+}
+#next{
+	right: 5%;
+	top: 45%;
+}
+#close{
+	top: 0;
+	right: 2%;
+}
+.box_img img{
+	opacity: 0;
+}
+.lbox:target .box_img img{
+	opacity: 1;
+	transition: opacity .4s linear;
+}
+figure.photo-subtitle{
+	font-style: italic;	
+	margin-left: 0px;
+}
+figure.photo-subtitle img{
+	margin-top: 20px;
+}
+figure.photo-subtitle figcaption{
+	font-family: Arial;
+	font-size: 15px;
+	font-style: normal;
+}
+figure.photo-subtitle p{
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -110px;
+}
+footer{
+	clear: both; /* Manter o Footer na parte de baixo*/
+	border-top: 1px solid #606060;
+}
+footer p{
+	text-align: center;
+}
