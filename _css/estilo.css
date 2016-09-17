@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
+*{
+	
+}
+
 body{
-	font-family: Arial, sans-serif;		
+	font-family: Arial, sans-serif;	
+	margin: 0;
+	padding: 0;	
 }
 a{
 	color: #606060;
@@ -78,9 +84,9 @@ div#inicio{
 div#interface{
 	/* width: 1350px; */
 	background-color: #ffffff;
-	margin: -20px -18px 0px -20px; /* Margen (cima direita baixo esquerda) */
+	margin: -20px -0 0px -0; /* Margen (cima direita baixo esquerda) */
 	/* box-shadow: 0px 0px 10px rgba(255,255,0,1); Sombra lateral da página */
-	padding: 10px 10px 10px 10px; /* Espaçamento entre texto e margem */
+	padding: 10px 0 10px 0; /* Espaçamento entre texto e margem */
 	color: #606060;
 }/*
 div#image-center{
