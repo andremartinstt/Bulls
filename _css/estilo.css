@@ -61,7 +61,7 @@ nav#menu ul{
 nav#menu li{
 	display: inline-block; /* Deixa os ítens na mesma linha */
 	padding: 10px; /* Espaçamento de 10 px de cada backgroud dos itens */
-	margin: 2px; /* Espaçamento entre os intens */
+	margin: 1px; /* Espaçamento entre os intens */
 	transition: background-color 1s;
 }
 nav#menu a:hover{  /* Houver é o efeito quando se passa o mouse por cima */
