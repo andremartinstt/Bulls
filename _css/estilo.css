@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-*{
-	
-}
-
 body{
 	font-family: Arial, sans-serif;	
 	margin: 0;
@@ -59,7 +55,7 @@ nav#menu ul{
 	text-transform: uppercase; /* Deixa a palavra em maiúsculo */
 	/*position: fixed;*/
 	position: absolute; /* Posicionamento absoluto de acordo com as coordenadas abaixo*/
-	top: 5px; /* Subindo o menu*/
+	top: 3px; /* Subindo o menu*/
 	left: 690px; /* espaçamento a esqueda do menu*/	
 }
 nav#menu li{
