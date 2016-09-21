@@ -31,12 +31,12 @@
 					<li><a href="historia.html">História</a></li>
 					<li><a href="noticias.html">Notícias</a></li>
 					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="contato.html">Contato</a></li>
+					<li><a href="contato.php">Contato</a></li>
 				</ul>
 			</nav>	
 
 		</header>
-		<?php if($msg==enviado): ?>
+		<?php if($msg==@enviado): ?>
 			<h1>Mensagem enviada, agradecemos o contato!</h1>
 		<?php else: ?>
 
