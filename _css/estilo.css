@@ -131,6 +131,9 @@ aside#sidebar p{
 	margin-right: 10px;
 	padding-bottom: 10px;
 }
+aside#sidebar p:hover{
+	text-decoration: underline;
+}
 aside#sidebar a:hover{
 	color: #000033;
 	font-weight: bold;
@@ -290,6 +293,19 @@ figure.photo-subtitle p{
 	position: absolute;
 	margin-left: 200px;
 	margin-top: -110px;
+}
+figure.photo-news{
+	position: relative;
+	border: 1px solid black;
+}
+figure.photo-news img{
+	
+}
+figure.photo-news figcaption{
+	position: absolute;
+	bottom: 10px;
+	color: black;
+	font-weight: bold;
 }
 footer{
 	clear: both; /* Manter o Footer na parte de baixo*/
