@@ -131,9 +131,6 @@ aside#sidebar p{
 	margin-right: 10px;
 	padding-bottom: 10px;
 }
-aside#sidebar p:hover{
-	text-decoration: underline;
-}
 aside#sidebar a:hover{
 	color: #000033;
 	font-weight: bold;
