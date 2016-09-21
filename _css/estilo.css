@@ -115,7 +115,7 @@ aside#sidebar{
 	display: block;
 	float: right;
 	width: 350px;
-	height: auto;
+	height: 700px;
 	border-left: 1px solid #606060;
 	padding-left: 20px;
 	overflow: scroll;
@@ -130,6 +130,13 @@ aside#sidebar p{
 	border-bottom: 1px dotted #606060;
 	margin-right: 10px;
 	padding-bottom: 10px;
+}
+aside#sidebar p:hover{
+	text-decoration: underline;
+}
+aside#sidebar a:hover{
+	color: #000033;
+	font-weight: bold;
 }
 /*
 div#image-center img{
