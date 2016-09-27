@@ -316,11 +316,13 @@ figure.photo-news figcaption{
 	height: 60px;
 	padding: 10px;
 	box-sizing: border-box;
-	opacity: 0;
-	transition: opacity 1s;
+	/* opacity: 0; */
 }
 figure.photo-news:hover figcaption{
-	opacity: 1;
+	/* opacity: 1; */
+	width: 100%;
+	height: 100%;
+	transition: opacity 1s;
 }
 /*
 figure.photo-news img{
