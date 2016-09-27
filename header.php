@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div id="interface">
-		<header id="cabecalho">
+	<header id="cabecalho">
 		<!--<img id="logo" src="_images/logo.png">-->
 		<a href="index.html">
 			<img id="logo" src="_images/minilogo.png" onMouseOver="this.src='_images/logohover.png'" onMouseOut="this.src='_images/minilogo.png'">
@@ -25,39 +25,13 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="historia.html">História</a></li>
-					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="equipe.html">Notícias</a></li>
 					<li><a href="galeria.html">Galeria</a></li>
 					<li><a href="contato.php">Contato</a></li>
 				</ul>
 			</nav>	
 
 		</header>
-		<section id="news">
-			<figure class="photo-news">
-				<img src="_images/used/no-image.png" />
-				<figcaption>Notícia 1 do Bulls</figcaption>
-			</figure>
-			<figure class="photo-news">
-				<img src="_images/used/no-image.png" />
-				<figcaption>Notícia 2 do Bulls</figcaption>
-			</figure>
-			<figure class="photo-news">
-				<img src="_images/used/no-image.png" />
-				<figcaption>Notícia 3 do Bulls</figcaption>
-			</figure>
-			<figure class="photo-news">
-				<img src="_images/used/no-image.png" />
-				<figcaption>Notícia 4 do Bulls</figcaption>
-			</figure>
-		</section>	
-		
-	<footer>
-		<p>
-			<a href="https://www.facebook.com/" target="_black">Facebook</a> | 
-			<a href="https://twitter.com/" target="_black">Twitter</a>
-		</p>
-	</footer>
-
 	</div>
 </body>
 </html>
