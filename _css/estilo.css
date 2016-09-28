@@ -354,6 +354,21 @@ figure.photo-news:hover figcaption{
 div#news{
 	margin-left: -80px;
 }
+
+/* Estilo página de Login */
+
+div#login{
+	position: absolute;
+	left: 500px;
+	top: 70px;
+}
+div#login h2{
+	margin-left: 115px;
+}
+div#login input[type=submit]{
+	margin-left: 95px;
+	margin-top: 20px;
+}
 footer{
 	clear: both; /* Manter o Footer na parte de baixo*/
 	border-top: 1px solid #606060;
