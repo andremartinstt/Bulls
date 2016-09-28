@@ -37,11 +37,11 @@
 
 		</header>
 		<?php if($msg==@enviado): ?>
-			<h1>Mensagem enviada, agradecemos o contato!</h1>
+			<h1></br>Mensagem enviada, agradecemos o contato!</br></br></br></h1>
 		<?php else: ?>
 
 		<section>
-			<form class="form-contact" action="mailsend.php" method="post">
+			<form class="form-contact" action="mailsend.php" method="POST">
 				<h2 class="page-title">Entre em contato</h2>
 				<p class="form-group">
 					<label for="nome">Nome</label>

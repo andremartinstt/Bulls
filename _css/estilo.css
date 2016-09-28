@@ -9,6 +9,9 @@ a{
 	color: #606060;
 	text-decoration: none;
 }
+
+/* Cabeçalho e Menu da página */
+
 img#logo{
 	padding-left: 50px;
 	padding-top: 15px;
@@ -77,6 +80,9 @@ div#inicio{
 	top: 25px; /* Subindo o menu*/
 	left: 150px; /* espaçamento a esqueda do menu*/
 }
+
+/* Interface geral */
+
 div#interface{
 	/* width: 1350px; */
 	background-color: #ffffff;
@@ -91,9 +97,15 @@ div#image-center{
 	height: 500px;
 	background-size: 100% auto;
 }*/
+
+/* Slide da Home */
+
 .cycle-slideshow img{
 	width: 100%;
 }
+
+/* Conteúdo da Home */
+
 article#content{
 	display: block; /* Colocar em bloco */
 	float: left;
@@ -145,6 +157,9 @@ div#image-center img{
 	padding: 0px;
 }
 */
+
+/* Tabela da Home */
+
 table#tabledate{
 	border: 1px solid #000033;
 	margin-left: 45px;
@@ -175,6 +190,9 @@ table#tabledate td{
 	font-size: 30px;
 	margin-top: 70px;
 }
+
+/* Estilo para o conteúdo das outras páginas */
+
 section#other-content{
 	margin-left: 45px;
 	margin-right: 45px;
@@ -218,6 +236,9 @@ section#other-content{
 .button:hover {
 	text-decoration: underline;
 }
+
+/* Estilo para a Galeria */
+
 ul.gallery{
 	width: 880px;
 	list-style: none;
@@ -277,6 +298,9 @@ ul.gallery{
 	opacity: 1;
 	transition: opacity .4s linear;
 }
+
+/* Estilo para as figuras */
+
 figure.photo-subtitle{
 	font-style: italic;	
 	margin-left: 0px;
@@ -316,24 +340,20 @@ figure.photo-news figcaption{
 	height: 60px;
 	padding: 10px;
 	box-sizing: border-box;
+	transition: opacity 1s;
 	/* opacity: 0; */
 }
 figure.photo-news:hover figcaption{
 	/* opacity: 1; */
 	width: 100%;
 	height: 100%;
-	transition: opacity 1s;
 }
-/*
-figure.photo-news img{
-	
+
+/* Página de Notícias */
+
+div#news{
+	margin-left: -80px;
 }
-figure.photo-news figcaption{
-	position: absolute;
-	bottom: 10px;
-	color: black;
-	font-weight: bold;
-}*/
 footer{
 	clear: both; /* Manter o Footer na parte de baixo*/
 	border-top: 1px solid #606060;
