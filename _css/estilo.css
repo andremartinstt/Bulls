@@ -28,6 +28,7 @@ header#cabecalho h1{
 	font-size: 25pt;
 	padding: 0px;
 	color: #e6e600;
+	width: 350px;
 }
 /*
 header#cabecalho h1{
@@ -360,7 +361,7 @@ div#news{
 div#login{
 	position: absolute;
 	left: 500px;
-	top: 70px;
+	top: 120px;
 }
 div#login h2{
 	margin-left: 115px;
@@ -369,6 +370,58 @@ div#login input[type=submit]{
 	margin-left: 95px;
 	margin-top: 20px;
 }
+div#login img{
+	margin-left: 127px;
+}
+
+/* Estilo Painel de Controle */
+
+
+section#wrapper{
+	width: 1020px;
+	height: auto;
+	margin: 0 auto;
+}
+
+section#content-panel{
+	width: 1020px;
+	height: auto;
+	float: left;
+	background-color: #fff;
+}
+
+section#contagem{
+	width: 500px;
+	height: 105px;
+	float: left;
+	background-color: #fff;
+	border-radius: 3px;
+	margin-top: 25px;
+	margin-left: 20px;
+	border: 1px solid #ccc;
+}
+section#contagem table{
+	width: 470px;
+	height: 70px;
+	margin-top: 12px;
+	margin-left: 14px;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+section#contagem table tr td{
+	padding: 10px 0px 10px 0px;
+}
+
+.table-marc{
+	width: 150px;
+	color: #19587c;
+}
+
+.table-val{
+	text-align: right;
+}
+
 footer{
 	clear: both; /* Manter o Footer na parte de baixo*/
 	border-top: 1px solid #606060;

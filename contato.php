@@ -69,7 +69,7 @@
 	
 	<footer>
 		<p>
-			<a href="https://www.facebook.com/" target="_black">Facebook</a> | 
+			<a href="https://www.facebook.com/thebullsfc/" target="_black">Facebook</a> | 
 			<a href="https://twitter.com/" target="_black">Twitter</a>
 		</p>
 	</footer>
