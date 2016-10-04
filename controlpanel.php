@@ -109,7 +109,7 @@ echo $nome;
 <section id="nota-rapida">
 			
 		
-	<h1>Publicar Nota Rápida</h1>
+	<h2>Publicar Nota Rápida</h2>
 			
 		
 	<form action="#" method="POST">
@@ -130,7 +130,7 @@ echo $nome;
 				
 			<tr><td><input type="text" name="tags-pesquisa" required="required" /></td></tr>
 				
-			<tr><td><input type="submit" name="publicar-nota" value="Publicar Nota" /></td></tr>
+			<tr><td><p><input type="submit" class="button" name="publicar-nota" value="Publicar Nota" /></p></td></tr>
 			
 		</tbody>				
 		
@@ -145,7 +145,7 @@ echo $nome;
 <section id="links-ultimas-noticias">
 			
 		
-	<h1>Últimas Notícias</h1>
+	<h2>Últimas Notícias</h2>
 			
 		
 	<ul>
@@ -178,7 +178,7 @@ echo $nome;
 	
 	<footer>
 		<p>
-			<a href="https://www.facebook.com/" target="_black">Facebook</a> | 
+			<a href="https://www.facebook.com/thebullsfc/" target="_black">Facebook</a> | 
 			<a href="https://twitter.com/" target="_black">Twitter</a>
 		</p>
 	</footer>
