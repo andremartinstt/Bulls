@@ -133,6 +133,7 @@ aside#sidebar{
 	border-left: 1px solid #ccc;
 	padding-left: 20px;
 	overflow: scroll;
+	color: #19587c;
 }
 aside#sidebar h2{
 	background-color: #000033;
@@ -141,6 +142,9 @@ aside#sidebar h2{
 	padding: 3px 10px 3px 10px;
 	border-radius: 3px 3px 0px 0px;
 	font-weight: normal;
+}
+aside#sidebar a{
+	color: #000033;
 }
 aside#sidebar p{
 	border-bottom: 1px dotted #606060;
