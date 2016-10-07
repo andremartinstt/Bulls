@@ -1,4 +1,4 @@
-<!--<?php session_start(); 
+<?php session_start(); 
 
 require_once 'configuration.php';
 
@@ -7,9 +7,7 @@ $Senha = $_SESSION['Senha'];
 
 $SQL = mysql_query("SELECT Nome, imgPerfil FROM administradores WHERE Usuario='$Usuario' AND Senha='$Senha' ");
 
-echo $nome;
-
-?>-->
+?>
 
 <!DOCTYPE html>
 <html lang="pt_br">
@@ -53,7 +51,6 @@ echo $nome;
 
 					while ($linha = mysql_fetch_assoc($SQL) ) {
 						$nomeUser = $linha['Nome'];
-						$imgUser = $linha['imgPerfil'];
 					}
 
 				?>
@@ -150,17 +147,13 @@ echo $nome;
 		
 	<ul>
 			
-		<li>Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD</li>
-			
-		<li>Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD</li>
-			
-		<li>Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD</li>
-			
-		<li>Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD</li>
-			
-		<li>Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD</li>
-			
-		<li>Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD Noticia numero 1 do portal WVD</li>
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>			
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>			
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>			
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>			
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>			
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>
+		<li>Noticia do site do Bulls Noticia do site do Bulls Noticia do site do Bulls</li>
 		
 	</ul>
 			
