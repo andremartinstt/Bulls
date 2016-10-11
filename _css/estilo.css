@@ -525,6 +525,24 @@ section#links-ultimas-noticias ul li:hover{
 	border-radius: 2px;
 	padding: 7px 10px 7px 10px;
 }
+section#logout-section{
+	padding-top: 25px;
+}
+section#logout-section h4{
+	position: absolute;
+	margin-top: 0;
+	right: 60px;
+	color: #000033;
+}
+section#logout-section a{
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 25px;
+	color: #000033;
+}
+section#logout-section a:hover{
+	text-decoration: underline;
+}
 
 /* Configuração Footer */
 

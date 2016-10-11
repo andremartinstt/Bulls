@@ -1,13 +1,27 @@
-<?php session_start(); 
+<?php
+	$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$banco = "bulls";
 
-require_once 'configuration.php';
+	@$conexao = mysql_connect($host, $user, $pass) or die(mysql_error());
+	mysql_select_db($banco) or die(mysql_error());
 
-$Usuario = $_SESSION['Usuario'];
-$Senha = $_SESSION['Senha'];
+ ?>
 
-$SQL = mysql_query("SELECT Nome, imgPerfil FROM administradores WHERE Usuario='$Usuario' AND Senha='$Senha' ");
+<?php 
+ 	session_start();
 
-?>
+ 	$Usuario = $_SESSION['Usuario'];
+	$Senha = $_SESSION['Senha'];
+
+	$SQL = mysql_query("SELECT Nome FROM administradores WHERE Usuario='$Usuario' AND Senha='$Senha' ");
+
+ 	if (!isset($_SESSION["Usuario"]) || !isset($_SESSION["Senha"])) { # Se a sessão de email e senha estiverem desativadas
+ 		header("Location: login.php");
+ 		exit;
+ 	} 
+ ?>
 
 <!DOCTYPE html>
 <html lang="pt_br">
@@ -40,27 +54,7 @@ $SQL = mysql_query("SELECT Nome, imgPerfil FROM administradores WHERE Usuario='$
 
 		</header>
 
-		<div id="topo">
-				
-	<!--<div id="logo"><img src="imagens/logo.png" alt="Painel de Controle" /></div>
-				
-		<div id="right">
-				
-			<div id="mensagem">
-				<?php
-
-					while ($linha = mysql_fetch_assoc($SQL) ) {
-						$nomeUser = $linha['Nome'];
-					}
-
-				?>
-				Olá, <?php echo $nomeUser; ?> <br />
-				<a href="#">Postar Notícia</a> - <a href="#">Alterar Perfil</a> - <a href="logout.php">Sair da Conta</a>
-			</div>
-					
-		<div id="foto-perfil"><img src="imagens/perfil/default.png" alt="Imagem de Perfil" width="85" height="85" /></div>
-					
-	</div>-->
+		<div id="topo">	
 				
 </div>
 	
@@ -137,7 +131,6 @@ $SQL = mysql_query("SELECT Nome, imgPerfil FROM administradores WHERE Usuario='$
 			
 	
 </section> <!-- Nota Rápida -->
-		
 	
 <section id="links-ultimas-noticias">
 			
@@ -165,7 +158,18 @@ $SQL = mysql_query("SELECT Nome, imgPerfil FROM administradores WHERE Usuario='$
 				
 	
 </section> <!-- Wrapper -->
-		
+
+<section id="logout-section">
+	<?php
+		while ($linha = mysql_fetch_assoc($SQL) ) {
+				$nomeUser = $linha['Nome'];
+			}
+
+	?>
+	<h4>Olá, <?php echo $nomeUser; ?> <br /></h4>
+	<a href="logout.php">Logout</a>
+</section>
+
 </main>
 
 	

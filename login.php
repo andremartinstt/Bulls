@@ -9,7 +9,7 @@
 	<body id="login-body">
 		<div id="login">
 			<img src="_images/minilogo.png">
-			<form action="user-login.php" method="POST">
+			<form action="userauth.php" method="POST">
 				<p class="form-group">
 					<label for="user">Usuário</label>
 					<input class="field" type="text" id="user" name="user" placeholder="Usuário" required="required" size="70" >
