@@ -336,9 +336,6 @@ figure.photo-news{
 	border: 1px solid white;
 	box-shadow: 1px 1px 4px black;
 }
-figure.photo-news img{
-
-}
 figure.photo-news figcaption{
 	position: absolute;
 	bottom: 0;
@@ -361,6 +358,18 @@ figure.photo-news:hover figcaption{
 
 div#news{
 	margin-left: -80px;
+}
+aside#sidebar-news{
+	position: absolute;
+	float: right;
+	right: 30px;
+	margin-top: -120px;
+}
+aside#sidebar-news a{
+	color: #000033;
+}
+aside#sidebar-news a:hover{
+	text-decoration: underline;
 }
 
 /* Estilo página de Login */
