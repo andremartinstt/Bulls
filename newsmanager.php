@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css" media="screen" />
 	<script type="text/javascript" src="_js/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="_js/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+	<script type="text/javascript" src="_js/default.js"></script>
 <script type="text/javascript">
 	tinyMCE.init({
 		// General options
@@ -94,7 +95,7 @@
 			
 			<section id="publicar-noticia">
 					
-				<form action="" method="POST" enctype="multipart/form-data">
+				<form action="newspost.php" method="POST" enctype="multipart/form-data">
 				<section id="publicar-noticia-left">
 					<table>
 					<tbody>

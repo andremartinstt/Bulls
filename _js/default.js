@@ -1,6 +1,13 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+$(function(){
+	var boxImg = $("#imagem-noticia-carregar");
+	var imgCar = $("#imagem-carregada");
 
+	$(boxImg).click(function(){
+		$(imgCar).click();
+	});
 
+	$(imgCar).change(function(){
+		document.getElementById("Imagem-noticia-carregar").value = document.getElementById("imagem-carregada").value;
+	});
+
+});
