@@ -1,3 +1,7 @@
+<?php
+	require_once 'connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -86,10 +90,21 @@
 			<section id="content-panel">
 			
 			<section id="submenu">
+				<?php
+					@$SQL_RS = mysql_query("SELECT status FROM noticias WHERE status=0");
+					$SQL_TN = mysql_query("SELECT status FROM noticias WHERE status=1");					
+					$SQL_LX = mysql_query("SELECT status FROM noticias WHERE status=2");
+
+					$CNT_RS = mysql_num_rows($SQL_RS);
+					$CNT_TN = mysql_num_rows($SQL_TN);
+					$CNT_LX = mysql_num_rows($SQL_LX);
+
+				?>
 				<ul>
 					<li class="activeColor">Publicar notícia</li>
-					<li>Ver todas as notícias</li>
-					<li>Excluir notícias</li>
+					<li>Ver todas as notícias <?php if($CNT_TN !=0) : echo "($CNT_TN)"; endif; ?></li>
+					<li>Rascunhos <?php if($CNT_RS !=0) : echo "($CNT_RS)"; endif; ?></li>
+					<li>Lixeira <?php if($CNT_LX !=0) : echo "($CNT_LX)"; endif; ?></li>
 				</ul>
 			</section>
 			
@@ -119,7 +134,7 @@
 									</tr>
 									<tr>
 										<td>Data Publicação:</td>
-										<td align="right"><!--<?php echo date("d/m/Y"); ?>--></td>
+										<td align="right"><?php echo date("d/m/Y"); ?></td>
 									</tr>
 									<tr>
 										<td>Autor:</td>
