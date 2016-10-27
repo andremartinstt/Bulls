@@ -1,3 +1,7 @@
+<?php
+	require_once 'connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,7 +29,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="historia.html">História</a></li>
-					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="noticias.php">Notícias</a></li>
 					<li><a href="galeria.html">Galeria</a></li>
 					<li><a href="contato.php">Contato</a></li>
 				</ul>
@@ -35,10 +39,19 @@
 		<section id="other-content">
 			<h2 class="page-title">Principais Notícias</h2>
 			<div id="news">
+				<?php
+					$SQL_NT = mysql_query("SELECT * FROM noticias");
+
+					while ($nt = mysql_fetch_array($SQL_NT)) {
+				?>		
+				
 				<figure class="photo-news">
-					<img src="_images/used/no-image.png" />
-					<figcaption>Notícia 1 do Bulls</figcaption>
+					<img src="_images/news-images/<?php echo $nt['imagem']; ?>" />
+					<figcaption><?php echo $nt['titulo']; ?></figcaption>
 				</figure>
+
+				<?php } ?>
+				<!--
 				<figure class="photo-news">
 					<img src="_images/used/no-image.png" />
 					<figcaption>Notícia 2 do Bulls</figcaption>
@@ -51,6 +64,7 @@
 					<img src="_images/used/no-image.png" />
 					<figcaption>Notícia 4 do Bulls</figcaption>
 				</figure>
+			-->
 			</div>
 		</section>	
 		<aside id="sidebar-news">

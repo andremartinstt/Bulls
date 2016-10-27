@@ -102,7 +102,7 @@
 				?>
 				<ul>
 					<li class="activeColor">Publicar notícia</li>
-					<li>Ver todas as notícias <?php if($CNT_TN !=0) : echo "($CNT_TN)"; endif; ?></li>
+					<li>Todas as notícias <?php if($CNT_TN !=0) : echo "($CNT_TN)"; endif; ?></li>
 					<li>Rascunhos <?php if($CNT_RS !=0) : echo "($CNT_RS)"; endif; ?></li>
 					<li>Lixeira <?php if($CNT_LX !=0) : echo "($CNT_LX)"; endif; ?></li>
 				</ul>
