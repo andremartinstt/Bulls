@@ -73,7 +73,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="historia.html">História</a></li>
-					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="noticias.php">Notícias</a></li>
 					<li><a href="galeria.html">Galeria</a></li>
 					<li><a href="contato.php">Contato</a></li>
 				</ul>
@@ -138,7 +138,12 @@
 									</tr>
 									<tr>
 										<td>Autor:</td>
-										<td align="right"><!--<?php echo $nomeUser; ?>--></td>
+										<?php 
+											$SQL_NA = mysql_query("SELECT autorPub FROM noticias");
+											while ($na = mysql_fetch_array($SQL_NA)) {
+										?>
+										<td align="right"><?php echo $na['autorPub']; ?></td>
+										<?php } ?>
 									</tr>
 								</tbody>
 							</table>

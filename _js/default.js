@@ -7,7 +7,7 @@ $(function(){
 	});
 
 	$(imgCar).change(function(){
-		document.getElementById("Imagem-noticia-carregar").value = document.getElementById("imagem-carregada").value;
+		document.getElementById("imagem-noticia-carregar").value = document.getElementById("imagem-carregada").value;
 	});
 
 });

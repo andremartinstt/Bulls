@@ -34,7 +34,21 @@
 
 			</header>
 			<article id="content">
-				
+				<?php 
+					//$id_rn = $_GET["id"];
+					$SQL_RN = mysql_query("SELECT * FROM noticias");
+
+					while ($rn = mysql_fetch_array($SQL_RN)) {
+						$data = explode("-", $rn["dataPub"]);
+						$dataEx = $data[2]."/".$data[1]."/".$data[0];
+					
+				?>
+				<h1><?php echo $rn["titulo"]; ?></h1>
+				<p>Data publicação: <?php echo $dataEx; ?> Autor: <?php echo $rn["autorPub"]; ?></p>
+				<img src="_images/news-images/<?php echo $rn["imagem"] ?>" alt="<?php echo $rn["titulo"]; ?>">
+				<?php echo $rn["conteudo"]; ?>
+				<strong>Tags: </strong> <?php echo $rn["tags"]; ?>
+				<?php } ?>
 			</article>
 		</div>
 	</body>

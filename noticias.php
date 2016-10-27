@@ -46,7 +46,7 @@
 				?>		
 				
 				<figure class="photo-news">
-					<img src="_images/news-images/<?php echo $nt['imagem']; ?>" />
+					<img src="_images/news-images/<?php echo $nt['imagem']; ?>" alt="<?php echo $nt["titulo"]; ?>" />
 					<figcaption><?php echo $nt['titulo']; ?></figcaption>
 				</figure>
 
