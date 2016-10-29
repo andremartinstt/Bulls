@@ -1,5 +1,6 @@
 <?php
 	require_once 'connection.php';
+	require_once 'finishsession.php';
 ?>
 
 <!DOCTYPE html>
@@ -139,11 +140,11 @@
 									<tr>
 										<td>Autor:</td>
 										<?php 
-											$SQL_NA = mysql_query("SELECT autorPub FROM noticias");
-											while ($na = mysql_fetch_array($SQL_NA)) {
+											while ($linha = mysql_fetch_assoc($SQL) ) {
+												$nomeUser = $linha['Nome'];
+											}
 										?>
-										<td align="right"><?php echo $na['autorPub']; ?></td>
-										<?php } ?>
+										<td align="right"><?php echo $nomeUser; ?></td>
 									</tr>
 								</tbody>
 							</table>
@@ -204,6 +205,17 @@
 			</section> <!-- contentcontent-panel -->
 				
 		</section> <!-- Wrapper -->
+
+		<section id="logout-section">
+			<?php
+				while ($linha = mysql_fetch_assoc($SQL) ) {
+					$nomeUser = $linha['Nome'];
+				}
+
+			?>
+			<h4>Olá, <?php echo $nomeUser; ?> <br /></h4>
+			<a href="logout.php">Logout</a>
+		</section>
 		
 	</main>
 

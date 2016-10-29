@@ -2,6 +2,7 @@
 	session_start();
 
 	require_once 'connection.php';
+	require_once 'finishsession.php';
 
 	$titulo = $_POST["titulo-noticia"];
 	$conteudo = $_POST["conteudo-noticia"];

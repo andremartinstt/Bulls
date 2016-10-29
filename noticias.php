@@ -36,7 +36,7 @@
 			</nav>	
 
 		</header>
-		<section id="other-content">
+		<section id="other-content-news">
 			<h2 class="page-title">Principais Notícias</h2>
 			<div id="news">
 				<?php
@@ -68,8 +68,28 @@
 			</div>
 		</section>	
 		<aside id="sidebar-news">
-			<a href="login.php">Login</a>
-		</aside>
+			<?php 
+				session_start();
+
+				if (isset($_SESSION['Usuario'])) {
+					
+			?>
+			
+				<?php
+	    			$SQL = mysql_query("SELECT Nome FROM administradores");
+					while ($linha = mysql_fetch_assoc($SQL) ) {
+						$nomeUser = $linha['Nome'];
+					}
+				?>
+				<h4>Olá, <?php echo $nomeUser; ?> <br /></h4>
+				<a href="logout.php">Logout</a>
+			
+				<?php } else{?>	
+					
+						<a href="login.php">Login</a>
+					
+				<?php } ?>	
+				</aside>			
 		
 	<footer>
 		<p>
@@ -81,3 +101,11 @@
 	</div>
 </body>
 </html>
+
+<!--<?php 
+				session_start();
+
+				if (isset($_SESSION['Usuario'])) {
+					echo $nt['usuario'];
+				}
+			?>-->

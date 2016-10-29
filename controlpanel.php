@@ -1,19 +1,6 @@
 <?php
 	include "connection.php";
- ?>
-
-<?php 
- 	session_start();
-
- 	$Usuario = $_SESSION['Usuario'];
-	$Senha = $_SESSION['Senha'];
-
-	$SQL = mysql_query("SELECT Nome FROM administradores WHERE Usuario='$Usuario' AND Senha='$Senha' ");
-
- 	if (!isset($_SESSION["Usuario"]) || !isset($_SESSION["Senha"])) { # Se a sessão de email e senha estiverem desativadas
- 		header("Location: login.php");
- 		exit;
- 	} 
+	include "finishsession.php";
  ?>
 
 <!DOCTYPE html>
@@ -62,7 +49,7 @@
 			<table>
 				<tbody>
 					<tr>
-						<td class="table-marc">Notícias Publicadas</td>
+						<td class="table-marc"><a href="newsmanager.php">Notícias Publicadas</a></td>
 						<td class="table-val">250</td>
 						<td>&nbsp;</td>
 						<td class="table-marc">Comentários Aprovados</td>
