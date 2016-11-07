@@ -27,7 +27,7 @@
 
 			<nav id="menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li><a href="historia.html">História</a></li>
 					<li><a href="noticias.php">Notícias</a></li>
 					<li><a href="galeria.html">Galeria</a></li>
@@ -40,31 +40,30 @@
 			<h2 class="page-title">Principais Notícias</h2>
 			<div id="news">
 				<?php
-					$SQL_NT = mysql_query("SELECT * FROM noticias");
+					$SQL_NT = mysql_query("SELECT * FROM noticias order by id_noticia desc");
+					$cont = 0;
 
 					while ($nt = mysql_fetch_array($SQL_NT)) {
+						$cont++;
 				?>		
-				
-				<figure class="photo-news">
-					<img src="_images/news-images/<?php echo $nt['imagem']; ?>" alt="<?php echo $nt["titulo"]; ?>" />
-					<a href="noticiapublicada.php?id=<?php echo $nt['id_noticia']; ?>"><figcaption><?php echo $nt['titulo']; ?></figcaption></a>
-				</figure>
+					<?php if ($cont <= 4) {
+						
+					?>
+					<figure class="photo-news">
+						<img src="_images/news-images/<?php echo $nt['imagem']; ?>" alt="<?php echo $nt["titulo"]; ?>" />
+						<a href="noticiapublicada.php?id=<?php echo $nt['id_noticia']; ?>"><figcaption><?php echo $nt['titulo']; ?></figcaption></a>
+					</figure>
+			</div>
+			<div id="news">
+					<?php } else{ ?>
+						<figure class="photo-news-mini">
+							<img src="_images/news-images/<?php echo $nt['imagem']; ?>" alt="<?php echo $nt["titulo"]; ?>" />
+							<a href="noticiapublicada.php?id=<?php echo $nt['id_noticia']; ?>"><figcaption><?php echo $nt['titulo']; ?></figcaption></a>
+						</figure>
+					<?php } ?>
 
 				<?php } ?>
-				<!--
-				<figure class="photo-news">
-					<img src="_images/used/no-image.png" />
-					<figcaption>Notícia 2 do Bulls</figcaption>
-				</figure>
-				<figure class="photo-news">
-					<img src="_images/used/no-image.png" />
-					<figcaption>Notícia 3 do Bulls</figcaption>
-				</figure>
-				<figure class="photo-news">
-					<img src="_images/used/no-image.png" />
-					<figcaption>Notícia 4 do Bulls</figcaption>
-				</figure>
-			-->
+				
 			</div>
 		</section>	
 		<aside id="sidebar-news">
@@ -76,9 +75,9 @@
 			?>
 			
 				<?php
-	    			$SQL = mysql_query("SELECT autorPub FROM noticias");
+	    			$SQL = mysql_query("SELECT Nome FROM administradores");
 					while ($linha = mysql_fetch_assoc($SQL) ) {
-						$nomeUser = $linha['autorPub'];
+						$nomeUser = $linha['Nome'];
 					}
 				?>
 				<h4>Olá, <a href="controlpanel.php"><?php echo $nomeUser; ?></a> <br /></h4>

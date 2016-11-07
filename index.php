@@ -1,3 +1,7 @@
+<?php
+	require_once 'connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,7 +29,7 @@
 		<nav id="menu">
 
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="historia.html">História</a></li>
 				<li><a href="noticias.php">Notícias</a></li>
 				<li><a href="galeria.html">Galeria</a></li>
@@ -68,9 +72,16 @@
 		</article>		
 	
 		<aside id="sidebar">
-			<h2>Útimas Notícias</h2>			
-			<p><a href="noticias.html"  target="_blank">Bulls tem projeto para iniciar um time de futebol americano.</a></p>
-			<p><a href="noticias.html"  target="_blank">Bulls tem jogo disputado no campeonato universitário da rádio Itatiaia.</a></p>
+			<h2>Útimas Notícias</h2>
+			<?php 
+				$SQL_NP = mysql_query("SELECT titulo, id_noticia FROM noticias order by id_noticia desc");
+
+				while ($nt = mysql_fetch_array($SQL_NP)) {
+				
+			?>		
+			<p><a href="noticiapublicada.php?id=<?php echo $nt['id_noticia']; ?>"  target="_blank"><?php echo $nt['titulo']; ?></a></p>
+			<?php } ?>
+			<!--<p><a href="noticias.html"  target="_blank">Bulls tem jogo disputado no campeonato universitário da rádio Itatiaia.</a></p>
 			<p><a href="noticias.html"  target="_blank">Bulls ganha clássico contra o Hot Boys.</a></p>
 			<p><a href="noticias.html"  target="_blank">Mediante temporal, clássico é adiado para a próxima semana.</a></p>
 			<p><a href="noticias.html"  target="_blank">Presidente Fabrício Oliveira negocia contratação de novo zagueiro.</a></p>
@@ -80,7 +91,7 @@
 			<p><a href="noticias.html"  target="_blank">ChurrasBulls confirmado pra esse sábado.</a></p>
 			<p><a href="noticias.html"  target="_blank">Bulls inicia preparação física.</a></p>
 			<p><a href="noticias.html"  target="_blank">Casa do Bulls interditada para reformas.</a></p>
-			<p><a href="noticias.html"  target="_blank">Seja sócio torcedor, Bulls Forever.</a></p>
+			<p><a href="noticias.html"  target="_blank">Seja sócio torcedor, Bulls Forever.</a></p>-->
 		</aside>	
 	
 		<footer>
