@@ -80,7 +80,7 @@
 						$nomeUser = $linha['Nome'];
 					}
 				?>
-				<h4>Olá, <a href="controlpanel.php"><?php echo $nomeUser; ?></a> <br /></h4>
+				<h4>Olá, <a href="newsmanager.php"><?php echo $nomeUser; ?></a> <br /></h4>
 				<a href="logout.php">Logout</a>
 			
 				<?php } else{?>	

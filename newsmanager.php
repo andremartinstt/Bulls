@@ -213,7 +213,7 @@
 				}
 
 			?>
-			<h4>Olá, <a href="controlpanel.php"><?php echo $nomeUser; ?></a> <br /></h4>
+			<h4>Olá, <a href="newsmanager.php"><?php echo $nomeUser; ?></a> <br /></h4>
 			<a id="a-logout" href="logout.php">Logout</a>
 		</section>
 		
