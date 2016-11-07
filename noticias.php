@@ -47,7 +47,7 @@
 				
 				<figure class="photo-news">
 					<img src="_images/news-images/<?php echo $nt['imagem']; ?>" alt="<?php echo $nt["titulo"]; ?>" />
-					<figcaption><?php echo $nt['titulo']; ?></figcaption>
+					<a href="noticiapublicada.php?id=<?php echo $nt['id_noticia']; ?>"><figcaption><?php echo $nt['titulo']; ?></figcaption></a>
 				</figure>
 
 				<?php } ?>
@@ -76,17 +76,17 @@
 			?>
 			
 				<?php
-	    			$SQL = mysql_query("SELECT Nome FROM administradores");
+	    			$SQL = mysql_query("SELECT autorPub FROM noticias");
 					while ($linha = mysql_fetch_assoc($SQL) ) {
-						$nomeUser = $linha['Nome'];
+						$nomeUser = $linha['autorPub'];
 					}
 				?>
-				<h4>Olá, <?php echo $nomeUser; ?> <br /></h4>
+				<h4>Olá, <a href="controlpanel.php"><?php echo $nomeUser; ?></a> <br /></h4>
 				<a href="logout.php">Logout</a>
 			
 				<?php } else{?>	
 					
-						<a href="login.php">Login</a>
+						<a href="login.php">Faça Login</a>
 					
 				<?php } ?>	
 				</aside>			
@@ -101,11 +101,3 @@
 	</div>
 </body>
 </html>
-
-<!--<?php 
-				session_start();
-
-				if (isset($_SESSION['Usuario'])) {
-					echo $nt['usuario'];
-				}
-			?>-->

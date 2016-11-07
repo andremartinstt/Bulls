@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 body{
 	font-family: Arial, sans-serif;	
@@ -544,10 +544,12 @@ section#logout-section h4{
 	color: #000033;
 }
 section#logout-section a{
+	color: #000033;
+}
+a#a-logout{
 	position: absolute;
 	margin-left: 20px;
-	margin-top: 25px;
-	color: #000033;
+	margin-top: 25px;	
 }
 section#logout-section a:hover{
 	text-decoration: underline;
@@ -649,6 +651,28 @@ section#publicar-nota-informacoes table tr td select{
 	height:  auto;
 	padding: 7px 10px 7px 10px;
 	border: 1px solid #ccc;
+}
+
+/* Notíciapublicada */
+
+#content-news{
+	margin-left: 40px;
+}
+#titulo-noticia{
+	color: #000033;
+	font-family: "Arial", sans-serif;
+	font-size: 18pt;
+}
+#data-noticia{
+	color: #000033;
+}
+#conteudo-noticia{
+	color: #606060;
+	font-family: "Arial", sans-serif;
+	
+}
+#tags-noticia{
+	margin-bottom: 10px;
 }
 
 /* Configuração Footer */

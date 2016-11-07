@@ -34,23 +34,34 @@
 				</nav>	
 
 			</header>
-			<article id="content">
+			<article id="content-news">
 				<?php 
-					//$id_rn = $_GET["id"];
-					$SQL_RN = mysql_query("SELECT * FROM noticias");
+					$id_rn = ($_GET["id"] != "") ? $_GET["id"] : "";
+
+					if($id_rn != ""){
+
+					$SQL_RN = mysql_query("SELECT * FROM noticias WHERE id_noticia='$id_rn'");
 
 					while ($rn = mysql_fetch_array($SQL_RN)) {
 						$data = explode("-", $rn["dataPub"]);
 						$dataEx = $data[2]."/".$data[1]."/".$data[0];
 					
 				?>
-				<h1><?php echo $rn["titulo"]; ?></h1>
-				<p>Data publicação: <?php echo $dataEx; ?> Autor: <?php echo $rn["autorPub"]; ?></p>
-				<img src="_images/news-images/<?php echo $rn["imagem"] ?>" alt="<?php echo $rn["titulo"]; ?>">
-				<?php echo $rn["conteudo"]; ?>
-				<strong>Tags: </strong> <?php echo $rn["tags"]; ?>
+				<section id="titulo-noticia"><h1><?php echo $rn["titulo"]; ?></h1></section>
+				<section id="data-noticia"><p>Data publicação: <?php echo $dataEx; ?> Autor: <?php echo $rn["autorPub"]; ?></p></section>
+				<section id="imagem-noticia"><img src="_images/news-images/<?php echo $rn["imagem"] ?>" alt="<?php echo $rn["titulo"]; ?>"></section>
+				<section id="conteudo-noticia"><?php echo $rn["conteudo"]; ?></section>
+				<section id="tags-noticia"><strong>Tags: </strong> <?php echo $rn["tags"]; ?></section>
+				<?php } }else { ?>
+					<h1>Página não existe!</h1>
 				<?php } ?>
 			</article>
+			<footer>
+				<p>
+					<a href="https://www.facebook.com/thebullsfc/" target="_black">Facebook</a> | 
+					<a href="https://twitter.com/" target="_black">Twitter</a>
+				</p>
+			</footer>
 		</div>
 	</body>
 </html>

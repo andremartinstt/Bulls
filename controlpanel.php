@@ -146,8 +146,8 @@
 			}
 
 	?>
-	<h4>Olá, <?php echo $nomeUser; ?> <br /></h4>
-	<a href="logout.php">Logout</a>
+	<h4>Olá, <a href="controlpanel.php"><?php echo $nomeUser; ?></a> <br /></h4>
+	<a id="a-logout" href="logout.php">Logout</a>
 </section>
 
 </main>
