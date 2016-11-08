@@ -7,6 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="_css/estilo.css" />
 	</head>
 	<body id="login-body">
+		<div id="login-a">
+			<a href="index.php">PÁGINA INICIAL</a>
+		</div>
 		<div id="login">
 			<img src="_images/minilogo.png">
 			<form action="userauth.php" method="POST">

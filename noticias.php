@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	require_once 'connection.php';
 ?>
 
@@ -68,15 +69,14 @@
 		</section>	
 		<aside id="sidebar-news">
 			<?php 
-				session_start();
-
+				
 				if (isset($_SESSION['Usuario'])) {
 					
 			?>
 			
 				<?php
-	    			$SQL = mysql_query("SELECT Nome FROM administradores");
-					while ($linha = mysql_fetch_assoc($SQL) ) {
+	    			$SQL_NM = mysql_query("SELECT Nome FROM administradores");
+					while ($linha = mysql_fetch_assoc($SQL_NM) ) {
 						$nomeUser = $linha['Nome'];
 					}
 				?>

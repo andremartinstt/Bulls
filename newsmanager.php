@@ -180,24 +180,7 @@
 								</tbody>
 							</table>				
 						</section>
-						
-						<section id="publicar-nota-informacoes">
-							<table>
-								<tbody>
-									<tr>
-										<td>Categoria da Notícia</td>
-									</tr>
-									<tr>
-										<td>
-											<select name="categoria-noticia">
-												<option	selected="selected" value="">Selecione uma Categoria</option>
-           </select>
-										</td>
-									</tr>
-								</tbody>
-							</table>				
-						</section>
-						
+												
 					</section>
 						  </form>
 			</section>

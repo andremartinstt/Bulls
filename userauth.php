@@ -30,7 +30,7 @@
 		$_SESSION['Usuario'] = $_POST['user'];
 		$_SESSION['Senha'] = $_POST['password'];
 
-		header("Location: controlpanel.php");
+		header("Location: newsmanager.php");
 
 	} else {
 		echo "Usuário ou Login incorretos. Aguarde um instante para tentar novamente!";

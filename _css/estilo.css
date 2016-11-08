@@ -436,6 +436,17 @@ div#login input[type=submit]{
 div#login img{
 	margin-left: 127px;
 }
+div#login-a{
+	position: absolute;
+	margin-left: 1200px;
+	margin-top: 20px;
+	border: 1px solid #000033;
+	border-radius: 3px 3px 0px 0px;
+	padding: 7px;
+}
+div#login-a a{
+	color: #000033;
+}
 
 /* Estilo Painel de Controle */
 
@@ -699,6 +710,14 @@ section#publicar-nota-informacoes table tr td select{
 }
 #data-noticia{
 	color: #000033;
+}
+#imagem-noticia{
+	width: 500px;
+	height: 320px;
+}
+#imagem-noticia img{
+	width: 100%;
+	height: 100%;
 }
 #conteudo-noticia{
 	color: #606060;
